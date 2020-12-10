@@ -973,7 +973,7 @@
                 </div>
 
                 <div class="under-footer g">
-                    2019 © Magenta Print, Всі права захищені
+                    <?= date("Y") ?> © Magenta Print, Всі права захищені
                 </div>
         </div>
 
