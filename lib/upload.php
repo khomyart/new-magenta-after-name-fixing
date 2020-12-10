@@ -47,11 +47,9 @@ if ($uploadOk == 0) {
 
 } else {
     var_dump($uploadOk);
-    $target_file = $target_dir . hash_file('md5', $_FILES["fileToUpload"]["name"]).'.'.substr(strrchr($_FILES["fileToUpload"]["name"], "."), 1);
-    //die ();
+    $target_file = $target_dir . md5($_FILES["fileToUpload"]["name"]. time()).'.'.substr(strrchr($_FILES["fileToUpload"]["name"], "."), 1);
+
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-
-
         echo "The file ". $_FILES["fileToUpload"]["name"]. " has been uploaded.";
 
         if ($_POST["submit"]) {
