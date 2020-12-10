@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+html {
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.table td,
+.table th {
+  border-style: none;
+  padding: 1px;
+}
