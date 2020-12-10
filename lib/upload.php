@@ -47,7 +47,7 @@ if ($uploadOk == 0) {
 
 } else {
     var_dump($uploadOk);
-    $target_file = $target_dir . hash_file('md5', $_FILES["fileToUpload"]["name"]);
+    $target_file = $target_dir . hash_file('md5', $_FILES["fileToUpload"]["name"]).'.'.substr(strrchr($_FILES["fileToUpload"]["name"], "."), 1);
     //die ();
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
 
