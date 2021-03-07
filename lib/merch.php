@@ -98,8 +98,8 @@ function insertUnit($type, $params)
     }
 
     if($type === 'size') {
-        $query = 'INSERT INTO `available_sizes`(`merch_under_type_id`, `S_a`, `S_b`, `S_c`, `M_a`, `M_b`, `M_c`, `L_a`, `L_b`, `L_c`, `XL_a`, `XL_b`, `XL_c`, `XXL_a`, `XXL_b`, `XXL_c`, `3XL_a`, `3XL_b`, `3XL_c`, `4XL_a`, `4XL_b`, `4XL_c`, `5XL_a`, `5XL_b`, `5XL_c`) 
-        VALUES (:merch_under_type_id, :S_a, :S_b, :S_c, :M_a, :M_b, :M_c, :L_a, :L_b, :L_c, :XL_a, :XL_b, :XL_c, :XXL_a, :XXL_b, :XXL_c, :3XL_a, :3XL_b, :3XL_c, :4XL_a, :4XL_b, :4XL_c, :5XL_a, :5XL_b, :5XL_c)';
+        $query = 'INSERT INTO `available_sizes`(`merch_under_type_id`, `S_a`, `S_b`, `S_c`, `M_a`, `M_b`, `M_c`, `L_a`, `L_b`, `L_c`, `XS_a`, `XS_b`, `XS_c`, `XL_a`, `XL_b`, `XL_c`, `XXS_a`, `XXS_b`, `XXS_c`, `XXL_a`, `XXL_b`, `XXL_c`, `3XS_a`, `3XS_b`, `3XS_c`, `3XL_a`, `3XL_b`, `3XL_c`, `4XL_a`, `4XL_b`, `4XL_c`, `5XL_a`, `5XL_b`, `5XL_c`) 
+        VALUES (:merch_under_typіe_id, :S_a, :S_b, :S_c, :M_a, :M_b, :M_c, :L_a, :L_b, :L_c, :XS_a, :XS_b, :XS_c, :XL_a, :XL_b, :XL_c, :XXS_a, :XXS_b, :XXS_c, :XXL_a, :XXL_b, :XXL_c, :3XS_a, :3XS_b, :3XS_c, :3XL_a, :3XL_b, :3XL_c, :4XL_a, :4XL_b, :4XL_c, :5XL_a, :5XL_b, :5XL_c)';
     }
 
     return performQuery($query, $params) ? true : false;
@@ -148,8 +148,8 @@ function copyUnit($currentPositionId) {
         return false;
     }
 
-    $query='INSERT INTO `available_sizes`(`merch_under_type_id`, `S_a`, `S_b`, `S_c`, `M_a`, `M_b`, `M_c`, `L_a`, `L_b`, `L_c`, `XL_a`, `XL_b`, `XL_c`, `XXL_a`, `XXL_b`, `XXL_c`, `3XL_a`, `3XL_b`, `3XL_c`, `4XL_a`, `4XL_b`, `4XL_c`, `5XL_a`, `5XL_b`, `5XL_c`) 
-                SELECT :lastAddedMerchUnderTypeId, `S_a`, `S_b`, `S_c`, `M_a`, `M_b`, `M_c`, `L_a`, `L_b`, `L_c`, `XL_a`, `XL_b`, `XL_c`, `XXL_a`, `XXL_b`, `XXL_c`, `3XL_a`, `3XL_b`, `3XL_c`, `4XL_a`, `4XL_b`, `4XL_c`, `5XL_a`, `5XL_b`, `5XL_c` FROM `available_sizes` WHERE `merch_under_type_id` = :currentId;';
+    $query='INSERT INTO `available_sizes`(`merch_under_type_id`, `S_a`, `S_b`, `S_c`, `M_a`, `M_b`, `M_c`, `L_a`, `L_b`, `L_c`, `XS_a`, `XS_b`, `XS_c`, `XL_a`, `XL_b`, `XL_c`, `XXS_a`, `XXS_b`, `XXS_c`, `XXL_a`, `XXL_b`, `XXL_c`, `3XS_a`, `3XS_b`, `3XS_c`, `3XL_a`, `3XL_b`, `3XL_c`, `4XL_a`, `4XL_b`, `4XL_c`, `5XL_a`, `5XL_b`, `5XL_c`) 
+                SELECT :lastAddedMerchUnderTypeId, `S_a`, `S_b`, `S_c`, `M_a`, `M_b`, `M_c`, `L_a`, `L_b`, `L_c`, `XS_a`, `XS_b`, `XS_c`, `XL_a`, `XL_b`, `XL_c`, `XXS_a`, `XXS_b`, `XXS_c`, `XXL_a`, `XXL_b`, `XXL_c`, `3XS_a`, `3XS_b`, `3XS_c`, `3XL_a`, `3XL_b`, `3XL_c`, `4XL_a`, `4XL_b`, `4XL_c`, `5XL_a`, `5XL_b`, `5XL_c` FROM `available_sizes` WHERE `merch_under_type_id` = :currentId;';
     if (!performQuery($query, $params)) {
         return false;
     }

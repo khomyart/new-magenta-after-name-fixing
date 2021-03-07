@@ -166,29 +166,30 @@ $availableSizes = getListOfAvailableSizes($searchValue);
                     </div>
                     <?php
                     foreach ($availableSizes as $availableSize) {
-                    if ($underPosition['id'] == $availableSize['merch_under_type_id']) {
-                    $merchUnderTypeAvailableSizeDisplayBlock = 'flex';
-                    $sizeTableNullPointer = 2;
-                    $sizeTablePointerIndex = 0;
+                        if ($underPosition['id'] == $availableSize['merch_under_type_id']) {
+                        $merchUnderTypeAvailableSizeDisplayBlock = 'flex';
+                        $sizeTableNullPointer = 2;
+                        $sizeTablePointerIndex = 0;
 
-                    foreach ($availableSize as $size) {
-                        if ((key($availableSize) !== 'merch_under_type_id')
-                            && (key($availableSize) !== 'id')) {
-                            if ($size == null) {
-                                $sizeTableNullPointer += 1;
+                            foreach ($availableSize as $size) {
+                                if ((key($availableSize) !== 'merch_under_type_id')
+                                    && (key($availableSize) !== 'id')) {
+                                    if ($size == null) {
+                                        $sizeTableNullPointer += 1;
+                                    }
+                                }
+                                next($availableSize);
+                                $sizeTablePointerIndex += 1;
                             }
-                        }
-                        next($availableSize);
-                        $sizeTablePointerIndex += 1;
-                    }
 
-                    if ($sizeTableNullPointer === $sizeTablePointerIndex) {
-                        $merchUnderTypeAvailableSizeDisplayBlock = 'none';
-                    } ?>
-                    <div class="size-table-div" style="display: <?= $merchUnderTypeAvailableSizeDisplayBlock ?>;">
+                            if ($sizeTableNullPointer === $sizeTablePointerIndex) {
+                                $merchUnderTypeAvailableSizeDisplayBlock = 'none';
+                            } ?>
+
                         <?php
                         }
-                        } ?>
+                    } ?>
+                    <div class="size-table-div" style="display: <?= $merchUnderTypeAvailableSizeDisplayBlock ?>;">
                         <div class="size-table-holder">
                             <table class="table">
                                 <thead>
