@@ -99,12 +99,21 @@ if (isset($_GET['newMerchUnderTypeSave'])) {
         'L_a' => $_GET['newMerchUnderTypeAvailableSizes']['l_a'],
         'L_b' => $_GET['newMerchUnderTypeAvailableSizes']['l_b'],
         'L_c' => $_GET['newMerchUnderTypeAvailableSizes']['l_c'],
+        'XS_a' => $_GET['newMerchUnderTypeAvailableSizes']['xs_a'],
+        'XS_b' => $_GET['newMerchUnderTypeAvailableSizes']['xs_b'],
+        'XS_c' => $_GET['newMerchUnderTypeAvailableSizes']['xs_c'],
         'XL_a' => $_GET['newMerchUnderTypeAvailableSizes']['xl_a'],
         'XL_b' => $_GET['newMerchUnderTypeAvailableSizes']['xl_b'],
         'XL_c' => $_GET['newMerchUnderTypeAvailableSizes']['xl_c'],
+        'XXS_a' => $_GET['newMerchUnderTypeAvailableSizes']['xxs_a'],
+        'XXS_b' => $_GET['newMerchUnderTypeAvailableSizes']['xxs_b'],
+        'XXS_c' => $_GET['newMerchUnderTypeAvailableSizes']['xxs_c'],
         'XXL_a' => $_GET['newMerchUnderTypeAvailableSizes']['xxl_a'],
         'XXL_b' =>  $_GET['newMerchUnderTypeAvailableSizes']['xxl_b'],
         'XXL_c' =>  $_GET['newMerchUnderTypeAvailableSizes']['xxl_c'],
+        '3XS_a' => $_GET['newMerchUnderTypeAvailableSizes']['3xs_a'],
+        '3XS_b' => $_GET['newMerchUnderTypeAvailableSizes']['3xs_b'],
+        '3XS_c' => $_GET['newMerchUnderTypeAvailableSizes']['3xs_c'],
         '3XL_a' =>  $_GET['newMerchUnderTypeAvailableSizes']['3xl_a'],
         '3XL_b' => $_GET['newMerchUnderTypeAvailableSizes']['3xl_b'],
         '3XL_c' =>  $_GET['newMerchUnderTypeAvailableSizes']['3xl_c'],
@@ -116,11 +125,11 @@ if (isset($_GET['newMerchUnderTypeSave'])) {
         '5XL_c' => $_GET['newMerchUnderTypeAvailableSizes']['5xl_c'],
         ];
 
-        foreach ($availableSizeParams as &$availableSizeParam) {
-            if (empty($availableSizeParam)) {
-                $availableSizeParam = NULL;
-            }
+    foreach ($availableSizeParams as &$availableSizeParam) {
+        if (empty($availableSizeParam)) {
+            $availableSizeParam = NULL;
         }
+    }
 
     insertUnit('size', $availableSizeParams);
     header('Location: merch.php?scrollTo='.$lastAddedMerchUnderTypeId['id'] );
@@ -157,11 +166,14 @@ if (isset($_GET['existedMerchUnderTypeSave'])) {
                                                 m.img = :img,
                                                 m.description = :description,
                                                 m.price = :price,
-                                                a.S_a = :S_b, a.S_b = :S_b, a.S_c = :S_c, 
+                                                a.S_a = :S_a, a.S_b = :S_b, a.S_c = :S_c, 
                                                 a.M_a = :M_a, a.M_b = :M_b, a.M_c = :M_c, 
                                                 a.L_a = :L_a, a.L_b = :L_b, a.L_c = :L_c, 
+                                                a.XS_a = :XS_a, a.XS_b = :XS_b, a.XS_c = :XS_c, 
                                                 a.XL_a = :XL_a, a.XL_b = :XL_b, a.XL_c = :XL_c, 
+                                                a.XXS_a = :XXS_a, a.XXS_b = :XXS_b, a.XXS_c = :XXS_c, 
                                                 a.XXL_a = :XXL_a, a.XXL_b = :XXL_b, a.XXL_c = :XXL_c, 
+                                                a.3XS_a = :3XS_a, a.3XS_b = :3XS_b, a.3XS_c = :3XS_c, 
                                                 a.3XL_a = :3XL_a, a.3XL_b = :3XL_b, a.3XL_c = :3XL_c, 
                                                 a.4XL_a = :4XL_a, a.4XL_b = :4XL_b, a.4XL_c = :4XL_c, 
                                                 a.5XL_a = :5XL_a, a.5XL_b = :5XL_b, a.5XL_c = :5XL_c
@@ -183,12 +195,21 @@ if (isset($_GET['existedMerchUnderTypeSave'])) {
         'L_a' => $_GET['existedMerchUnderTypeAvailableSizes']['l_a'],
         'L_b' => $_GET['existedMerchUnderTypeAvailableSizes']['l_b'],
         'L_c' => $_GET['existedMerchUnderTypeAvailableSizes']['l_c'],
+        'XS_a' => $_GET['existedMerchUnderTypeAvailableSizes']['xs_a'],
+        'XS_b' => $_GET['existedMerchUnderTypeAvailableSizes']['xs_b'],
+        'XS_c' => $_GET['existedMerchUnderTypeAvailableSizes']['xs_c'],
         'XL_a' => $_GET['existedMerchUnderTypeAvailableSizes']['xl_a'],
         'XL_b' => $_GET['existedMerchUnderTypeAvailableSizes']['xl_b'],
         'XL_c' => $_GET['existedMerchUnderTypeAvailableSizes']['xl_c'],
+        'XXS_a' => $_GET['existedMerchUnderTypeAvailableSizes']['xxs_a'],
+        'XXS_b' => $_GET['existedMerchUnderTypeAvailableSizes']['xxs_b'],
+        'XXS_c' => $_GET['existedMerchUnderTypeAvailableSizes']['xxs_c'],
         'XXL_a' => $_GET['existedMerchUnderTypeAvailableSizes']['xxl_a'],
         'XXL_b' =>  $_GET['existedMerchUnderTypeAvailableSizes']['xxl_b'],
         'XXL_c' =>  $_GET['existedMerchUnderTypeAvailableSizes']['xxl_c'],
+        '3XS_a' => $_GET['existedMerchUnderTypeAvailableSizes']['3xs_a'],
+        '3XS_b' => $_GET['existedMerchUnderTypeAvailableSizes']['3xs_b'],
+        '3XS_c' => $_GET['existedMerchUnderTypeAvailableSizes']['3xs_c'],
         '3XL_a' =>  $_GET['existedMerchUnderTypeAvailableSizes']['3xl_a'],
         '3XL_b' => $_GET['existedMerchUnderTypeAvailableSizes']['3xl_b'],
         '3XL_c' =>  $_GET['existedMerchUnderTypeAvailableSizes']['3xl_c'],
@@ -429,8 +450,11 @@ include './templates/header.php'; ?>
                                     <th scope="col">S</th>
                                     <th scope="col">M</th>
                                     <th scope="col">L</th>
+                                    <th scope="col">XS</th>
                                     <th scope="col">XL</th>
+                                    <th scope="col">XXS</th>
                                     <th scope="col">XXL</th>
+                                    <th scope="col">3XS</th>
                                     <th scope="col">3XL</th>
                                     <th scope="col">4XL</th>
                                     <th scope="col">5XL</th>
@@ -445,10 +469,16 @@ include './templates/header.php'; ?>
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['M_a'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[l_a]"
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['L_a'] ?>"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[xs_a]"
+                                                           value="<?= $merchUnderTypeEditGeneralInfoAndSizes['XS_a'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[xl_a]"
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['XL_a'] ?>"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[xxs_a]"
+                                                           value="<?= $merchUnderTypeEditGeneralInfoAndSizes['XXS_a'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[xxl_a]"
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['XXL_a'] ?>"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[3xs_a]"
+                                                           value="<?= $merchUnderTypeEditGeneralInfoAndSizes['3XS_a'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[3xl_a]"
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['3XL_a'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[4xl_a]"
@@ -464,10 +494,16 @@ include './templates/header.php'; ?>
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['M_b'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[l_b]"
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['L_b'] ?>"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[xs_b]"
+                                                           value="<?= $merchUnderTypeEditGeneralInfoAndSizes['XS_b'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[xl_b]"
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['XL_b'] ?>"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[xxs_b]"
+                                                           value="<?= $merchUnderTypeEditGeneralInfoAndSizes['XXS_b'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[xxl_b]"
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['XXL_b'] ?>"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[3xs_b]"
+                                                           value="<?= $merchUnderTypeEditGeneralInfoAndSizes['3XS_b'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[3xl_b]"
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['3XL_b'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[4xl_b]"
@@ -483,10 +519,16 @@ include './templates/header.php'; ?>
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['M_c'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[l_c]"
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['L_c'] ?>"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[xs_c]"
+                                                           value="<?= $merchUnderTypeEditGeneralInfoAndSizes['XS_c'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[xl_c]"
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['XL_c'] ?>"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[xxs_c]"
+                                                           value="<?= $merchUnderTypeEditGeneralInfoAndSizes['XXS_c'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[xxl_c]"
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['XXL_c'] ?>"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[3xs_c]"
+                                                           value="<?= $merchUnderTypeEditGeneralInfoAndSizes['3XS_c'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[3xl_c]"
                                                            value="<?= $merchUnderTypeEditGeneralInfoAndSizes['3XL_c'] ?>"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="existedMerchUnderTypeAvailableSizes[4xl_c]"
@@ -612,8 +654,11 @@ include './templates/header.php'; ?>
                                     <th scope="col">S</th>
                                     <th scope="col">M</th>
                                     <th scope="col">L</th>
+                                    <th scope="col">XS</th>
                                     <th scope="col">XL</th>
+                                    <th scope="col">XXS</th>
                                     <th scope="col">XXL</th>
+                                    <th scope="col">3XS</th>
                                     <th scope="col">3XL</th>
                                     <th scope="col">4XL</th>
                                     <th scope="col">5XL</th>
@@ -625,8 +670,11 @@ include './templates/header.php'; ?>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[s_a]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[m_a]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[l_a]"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[xs_a]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[xl_a]"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[xxs_a]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[xxl_a]"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[3xs_a]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[3xl_a]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[4xl_a]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[5xl_a]"></th>
@@ -636,8 +684,11 @@ include './templates/header.php'; ?>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[s_b]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[m_b]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[l_b]"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[xs_b]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[xl_b]"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[xxs_b]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[xxl_b]"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[3xs_b]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[3xl_b]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[4xl_b]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[5xl_b]"></th>
@@ -647,8 +698,11 @@ include './templates/header.php'; ?>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[s_c]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[m_c]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[l_c]"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[xs_c]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[xl_c]"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[xxs_c]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[xxl_c]"></th>
+                                    <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[3xs_c]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[3xl_c]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[4xl_c]"></th>
                                     <th scope="row"><input style="width: 40px;" type="number" name="newMerchUnderTypeAvailableSizes[5xl_c]"></th>
