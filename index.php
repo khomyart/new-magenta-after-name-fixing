@@ -197,11 +197,32 @@
                     height: 23vh;
                     flex-grow: 0;
                 }
+
+                .man img {
+                    transform: translate(-50%, -48%)
+                    scale(0.21);
+                }
+
+                .man:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.23);
+                }
+
                 .woman {
                     width: 32%;
                     min-width: 20%;
                     height: 23vh;
                     flex-grow: 0;
+                }
+
+                .woman img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .woman:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
                 }
 
                 .child {
@@ -211,6 +232,16 @@
                     flex-grow: 0;
                 }
 
+                .child img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .child:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
+                }
+
                 .hat {
                     min-width: 48.5%;
                     height: 23vh;
@@ -218,10 +249,30 @@
 
                 }
 
+                .hat img {
+                    transform: translate(-50%, -48%)
+                    scale(0.21);
+                }
+
+                .hat:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.23);
+                }
+
                 .bag {
                     min-width: 48.5%;
                     height: 23vh;
                     flex-grow: 0;
+                }
+
+                .bag img {
+                    transform: translate(-50%, -48%)
+                    scale(0.21);
+                }
+
+                .bag:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.23);
                 }
 
             }
@@ -465,11 +516,31 @@
                     flex-grow: 0;
                 }
 
+                .woman img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .woman:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
+                }
+
                 .child {
                     width: 98%;
                     min-width: 310px;
                     height: 30vh;
                     flex-grow: 0;
+                }
+
+                .child img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .child:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
                 }
 
                 .hat {
@@ -480,11 +551,31 @@
 
                 }
 
+                .hat img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .hat:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
+                }
+
                 .bag {
                     width: 98%;
                     min-width: 310px;
                     height: 30vh;
                     flex-grow: 0;
+                }
+
+                .bag img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .bag:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
                 }
 
                 .footer {
@@ -529,11 +620,32 @@
                     height: 22vh;
                     flex-grow: 0;
                 }
+
+                .man img {
+                    transform: translate(-50%, -48%)
+                    scale(0.21);
+                }
+
+                .man:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.23);
+                }
+
                 .woman {
                     width: 32%;
                     min-width: 20%;
                     height: 22vh;
                     flex-grow: 0;
+                }
+
+                .woman img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .woman:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
                 }
 
                 .child {
@@ -543,6 +655,16 @@
                     flex-grow: 0;
                 }
 
+                .child img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .child:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
+                }
+
                 .hat {
                     min-width: 48.5%;
                     height: 22vh;
@@ -550,10 +672,30 @@
 
                 }
 
+                .hat img {
+                    transform: translate(-50%, -48%)
+                    scale(0.21);
+                }
+
+                .hat:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.23);
+                }
+
                 .bag {
                     min-width: 48.5%;
                     height: 22vh;
                     flex-grow: 0;
+                }
+
+                .bag img {
+                    transform: translate(-50%, -48%)
+                    scale(0.21);
+                }
+
+                .bag:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.23);
                 }
             }
             /*LOGO*/
@@ -755,7 +897,7 @@
                                     <div class="position-text-underline">
                                     </div>
                                 </div>
-                            <img class="man-woman-image" src="https://via.placeholder.com/800">
+                            <img class="man-woman-image" src="/img/BST/woman/woman.png">
                             <span>
                                 <div class="man-woman-button">
                                     <button class="man-woman-button-scroll-pointer" type="submit" name="scrollTo"
@@ -771,7 +913,7 @@
                                     <div class="position-text-underline">
                                     </div>
                                 </div>
-                            <img class="man-woman-image" src="https://via.placeholder.com/800">
+                            <img class="man-woman-image" src="/img/BST/child/child.png">
                             <span>
                                 <div class="man-woman-button">
                                     <button class="man-woman-button-scroll-pointer" type="submit" name="scrollTo"
@@ -787,7 +929,7 @@
                                 <div class="position-text-underline">
                                 </div>
                             </div>
-                             <img class="man-woman-image" src="https://via.placeholder.com/800">
+                             <img class="man-woman-image" src="img/BST/cups/cups.png">
                             <span>
                                 <div class="man-woman-button">
                                     <button class="man-woman-button-scroll-pointer" type="submit" name="scrollTo"
@@ -803,7 +945,7 @@
                                     <div class="position-text-underline">
                                     </div>
                                 </div>
-                            <img class="man-woman-image" src="https://via.placeholder.com/800">
+                            <img class="man-woman-image" src="img/BST/hats/hats.png">
                             <span>
                                 <div class="man-woman-button">
                                     <button class="man-woman-button-scroll-pointer" type="submit" name="scrollTo"

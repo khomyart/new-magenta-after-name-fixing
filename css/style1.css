@@ -516,12 +516,12 @@ h2 {
 
 .woman img {
     transform: translate(-50%, -48%)
-    scale(1);
+    scale(0.28);
 }
 
 .woman:hover img {
     transform: translate(-50%,-48%)
-    scale(1.1);
+    scale(0.30);
 }
 
 .child {
@@ -534,12 +534,12 @@ h2 {
 
 .child img {
     transform: translate(-50%, -48%)
-    scale(1);
+    scale(0.18);
 }
 
 .child:hover img {
     transform: translate(-50%,-48%)
-    scale(1.1);
+    scale(0.20);
 }
 
 .hat {
@@ -553,12 +553,12 @@ h2 {
 
 .hat img {
     transform: translate(-50%, -48%)
-    scale(1);
+    scale(0.18);
 }
 
 .hat:hover img {
     transform: translate(-50%,-48%)
-    scale(1.1);
+    scale(0.20);
 }
 
 .bag {
@@ -571,12 +571,12 @@ h2 {
 
 .bag img {
     transform: translate(-50%, -48%)
-    scale(1);
+    scale(0.18);
 }
 
 .bag:hover img {
     transform: translate(-50%,-48%)
-    scale(1.1);
+    scale(0.20);
 }
 
 .footer {
