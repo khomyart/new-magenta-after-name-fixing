@@ -3,7 +3,6 @@ include './imports.php';
 header("Content-Type: text/html; charset=UTF-8");
 
 $searchValue = '';
-$availableColours = getListOfAvailableColors();
 
 /* Searching algorithm */
 if (isset($_REQUEST['isSearch']) && ($_REQUEST['isSearch'] == 'Y')) {
@@ -123,7 +122,7 @@ if (isset($_GET['newMerchUnderTypeSave'])) {
         '5XL_a' => $_GET['newMerchUnderTypeAvailableSizes']['5xl_a'],
         '5XL_b' => $_GET['newMerchUnderTypeAvailableSizes']['5xl_b'],
         '5XL_c' => $_GET['newMerchUnderTypeAvailableSizes']['5xl_c'],
-        ];
+    ];
 
     foreach ($availableSizeParams as &$availableSizeParam) {
         if (empty($availableSizeParam)) {
@@ -272,6 +271,8 @@ $underPositions = getListOfMerchUnderTypes($searchValue);
 $colourPacks = getListOfColourPack($searchValue);
 /* Sizes for particular under types (under positions) */
 $availableSizes = getListOfAvailableSizes($searchValue);
+//??
+$availableColours = getListOfAvailableColors();
 
 $merchTypesDisplayBlock = false;
 

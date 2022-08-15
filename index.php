@@ -9,7 +9,7 @@
         <title>"Magenta Print|Головна сторінка"</title>
         <link href="css/style1.css" rel="stylesheet">
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="icon" type="image/png" href="/img/logos/favicon.png"/>
+	    <link rel="icon" type="image/png" href="/img/logos/favicon.png"/>
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -976,7 +976,7 @@
                                     <td align="center" colspan="3">
                                         <h3>
                                             <i class="fa fa-phone-square"></i>
-                                           Телефони:
+                                           Телефон:
                                         </h3>
                                     </td>
                                 </tr>
@@ -994,33 +994,15 @@
                                     <td align="left">
                                         <a style="text-decoration: underline;
                                                   text-decoration-color: purple;" 
-                                           href="tel:380964303386">+380964303386</a>
-                                            (Київстар)
+                                           href="tel:380988883332">+380988883332</a>
+                                            (Київстар) 
                                     </td>
                                     <td vertical-align="center">
                                         <div class="icons-decor">
-                                            <a href="viber://chat?number=380964303386">
+                                            <a href="viber://chat?number=380988883332">
                                                 <img width=20 style="margin-top:5px;" src="/img/BST/icons/viber-brands.svg">
                                             </a>
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="7" colspan="3">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="icons-decor">
-                                            <i class="fa fa-phone"></i>
-                                        </div>
-                                    </td>
-                                    <td></td>
-                                    <td align="left">
-                                        <a style="text-decoration: underline;
-                                                  text-decoration-color: purple;" 
-                                           href="tel:380506214211">+380506214211</a>
-                                            (Vodafone)
                                     </td>
                                 </tr>
                             </table>
@@ -1067,11 +1049,12 @@
                                 <tr>
                                     <td>Субота:</td>
                                     <td></td>
-                                    <td>10:00 — 15:00</td>
+                                    <td>10:00 — 18:00</td>
                                 </tr>
                                 <tr>
                                     <td>Неділя:</td>
-                                    <td colspan="2" align="center">Вихідний</td>
+                                    <td></td>
+                                    <td>10:00 — 17:00</td>
                                 </tr>
                             </table>
                         </div>

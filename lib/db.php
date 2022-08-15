@@ -17,10 +17,11 @@ try {
 function performQuery($query, $params)
 {
     global $pdo;
-
+    
+    // var_dump($query);
+    // die();
     $statement = $pdo->prepare($query);
     $statement->execute($params);
-
     return $statement;
 }
 
@@ -33,7 +34,6 @@ function performQuery($query, $params)
 function getAllRows($query, $params = [])
 {
     $statement = performQuery($query, $params);
-
     if ($statement === false) {
         return [];
     }
