@@ -10,6 +10,7 @@
         <title>"Magenta Print|Про нас"</title>
         <link href="css/style1.css" rel="stylesheet">
         <link href="css/style_gallery.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="/img/logos/favicon.png"/>
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
         <link rel="stylesheet" href="css/lightbox.min.css">
@@ -670,7 +671,7 @@
                 <div class="space-between-lots">
                 </div>
                 <!--FOOTER-->
-                 <div class="footer">
+                <div class="footer">
                     <div class="magenta-logo-div">
                         <img class="magenta-logo" src="img/BST/magenta-logo.png" alt="">
                     </div>
@@ -681,7 +682,7 @@
                                     <td align="center" colspan="3">
                                         <h3>
                                             <i class="fa fa-phone-square"></i>
-                                           Телефони:
+                                           Телефон:
                                         </h3>
                                     </td>
                                 </tr>
@@ -699,33 +700,15 @@
                                     <td align="left">
                                         <a style="text-decoration: underline;
                                                   text-decoration-color: purple;" 
-                                           href="tel:380964303386">+380964303386</a>
-                                            (Київстар)
+                                           href="tel:380988883332">+380988883332</a>
+                                            (Київстар) 
                                     </td>
                                     <td vertical-align="center">
                                         <div class="icons-decor">
-                                            <a href="viber://chat?number=380964303386">
+                                            <a href="viber://chat?number=380988883332">
                                                 <img width=20 style="margin-top:5px;" src="/img/BST/icons/viber-brands.svg">
                                             </a>
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="7" colspan="3">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="icons-decor">
-                                            <i class="fa fa-phone"></i>
-                                        </div>
-                                    </td>
-                                    <td></td>
-                                    <td align="left">
-                                        <a style="text-decoration: underline;
-                                                  text-decoration-color: purple;" 
-                                           href="tel:380506214211">+380506214211</a>
-                                            (Vodafone)
                                     </td>
                                 </tr>
                             </table>
@@ -772,11 +755,12 @@
                                 <tr>
                                     <td>Субота:</td>
                                     <td></td>
-                                    <td>10:00 — 15:00</td>
+                                    <td>10:00 — 18:00</td>
                                 </tr>
                                 <tr>
                                     <td>Неділя:</td>
-                                    <td colspan="2" align="center">Вихідний</td>
+                                    <td></td>
+                                    <td>10:00 — 17:00</td>
                                 </tr>
                             </table>
                         </div>
@@ -820,7 +804,7 @@
                 </div>
 
                 <div class="under-footer g">
-                    2019 © Magenta Print, Всі права захищені
+                    <?= date("Y") ?> © Magenta Print, Всі права захищені
                 </div>
         </div>
 

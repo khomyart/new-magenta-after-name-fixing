@@ -6,11 +6,11 @@
  * @param string $filter
  * @return array
  */
-function getListOfMerchTypes()
+function getListOfMerchTypes($filter = '')
 {
     $query = 'SELECT * FROM `merch_types` WHERE 1';
-    $params['filter'] = '% %';
-
+    $params = null;
+    // $params['filter'] = '% %';
 
     return getAllRows($query, $params);
 }
@@ -46,7 +46,8 @@ function getListOfColourPack()
     $query = 'SELECT m.merch_under_type_id, m.color_id, a.color, a.article, a.description, a.textColor 
                 FROM `merch_under_types_color` as m 
                 LEFT JOIN `available_colors` as a ON m.color_id = a.id;';
-    $params['filter'] = '% %';
+    // $params['filter'] = '% %';
+    $params = null;
 
     return getAllRows($query, $params);
 }
@@ -67,7 +68,8 @@ function getListOfAvailableColors()
 function getListOfAvailableSizes($filter = '')
 {
     $query = 'SELECT * FROM `available_sizes` WHERE 1';
-    $params['filter'] = '% %';
+    // $params['filter'] = '% %';
+    $params = null;
 
     $results = getAllRows($query, $params);
 
@@ -99,7 +101,11 @@ function insertUnit($type, $params)
 
     if($type === 'size') {
         $query = 'INSERT INTO `available_sizes`(`merch_under_type_id`, `S_a`, `S_b`, `S_c`, `M_a`, `M_b`, `M_c`, `L_a`, `L_b`, `L_c`, `XS_a`, `XS_b`, `XS_c`, `XL_a`, `XL_b`, `XL_c`, `XXS_a`, `XXS_b`, `XXS_c`, `XXL_a`, `XXL_b`, `XXL_c`, `3XS_a`, `3XS_b`, `3XS_c`, `3XL_a`, `3XL_b`, `3XL_c`, `4XL_a`, `4XL_b`, `4XL_c`, `5XL_a`, `5XL_b`, `5XL_c`) 
-        VALUES (:merch_under_typіe_id, :S_a, :S_b, :S_c, :M_a, :M_b, :M_c, :L_a, :L_b, :L_c, :XS_a, :XS_b, :XS_c, :XL_a, :XL_b, :XL_c, :XXS_a, :XXS_b, :XXS_c, :XXL_a, :XXL_b, :XXL_c, :3XS_a, :3XS_b, :3XS_c, :3XL_a, :3XL_b, :3XL_c, :4XL_a, :4XL_b, :4XL_c, :5XL_a, :5XL_b, :5XL_c)';
+        VALUES (:merch_under_type_id, :S_a, :S_b, :S_c, :M_a, :M_b, :M_c, :L_a, :L_b, :L_c, :XS_a, :XS_b, :XS_c, :XL_a, :XL_b, :XL_c, :XXS_a, :XXS_b, :XXS_c, :XXL_a, :XXL_b, :XXL_c, :3XS_a, :3XS_b, :3XS_c, :3XL_a, :3XL_b, :3XL_c, :4XL_a, :4XL_b, :4XL_c, :5XL_a, :5XL_b, :5XL_c)';
+        // VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+        // var_dump($params);
+        // var_dump($query);
+        // die();
     }
 
     return performQuery($query, $params) ? true : false;
