@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
         <link rel="stylesheet" href="css/lightbox.min.css">
-
+        <?php include 'google_tracking.php'; ?>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script src="js/lightbox-plus-jquery.min.js"></script>
 

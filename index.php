@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <?php include 'google_tracking.php'; ?>
         <style>
 
             @media (max-width: 1550px) {
