@@ -95,10 +95,6 @@ h2 {
     transform: rotate(380deg);
 }
 
-.menu-label.menu-label-activated{
-
-}
-
 .navbar {
     width: 100%;
     height: 4rem;
@@ -120,10 +116,6 @@ h2 {
 .navbar-left-padding {
     transition: all 0.5s ease-in-out;
     width:10%;
-}
-
-.navbar-left-padding.navbar-left-padding-activated {
-
 }
 
 .menu-center {
@@ -440,6 +432,7 @@ h2 {
     align-items: center;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .man-woman-button {

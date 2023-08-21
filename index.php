@@ -1,6 +1,6 @@
 <?php
-    include 'imports.php';
-?>
+   include 'imports.php';
+?> 
 
 <!DOCTYPE html>
 <html>
@@ -189,7 +189,6 @@
                     max-height: 711px;
                     box-sizing: border-box;
                     margin-top: 0rem;
-                    
                 }
                 
                 .man {
@@ -876,7 +875,7 @@
                 </div>
                 <form action="price.php" method="get">
                     <div class="man-woman-container">
-                        <div class="man man-woman-img-container">
+                        <a class="man man-woman-img-container" href="price.php?scrollTo=Чоловічий+одяг">
                             <div class="text-background">
                                 <h2 class="white-text-with-shadows">Чоловічий одяг</h2>
                                 <div class="position-text-underline">
@@ -884,15 +883,9 @@
                             </div>
                             <img class="man-woman-image" src="/img/BST/man/man.png">
                             <span>
-                                <div class="man-woman-button">
-                                    <button class="man-woman-button-scroll-pointer" type="submit" name="scrollTo"
-                                            value="Чоловічий одяг">
-                                    ...
-                                    </button>
-                                </div>
                             </span>
-                        </div>
-                        <div class="woman man-woman-img-container">
+                        </a>
+                        <a class="woman man-woman-img-container" href="price.php?scrollTo=Жіночий+одяг">
                                 <div class="text-background">
                                     <h2 class="white-text-with-shadows">Жіночий одяг</h2>
                                     <div class="position-text-underline">
@@ -900,15 +893,9 @@
                                 </div>
                             <img class="man-woman-image" src="/img/BST/woman/woman.png">
                             <span>
-                                <div class="man-woman-button">
-                                    <button class="man-woman-button-scroll-pointer" type="submit" name="scrollTo"
-                                            value="Жіночий одяг">
-                                    ...
-                                    </button>
-                                </div>
                             </span>
-                        </div>
-                        <div class="child man-woman-img-container">
+                        </a>
+                        <a class="child man-woman-img-container" href="price.php?scrollTo=Дитячий+одяг">
                                 <div class="text-background">
                                     <h2 class="white-text-with-shadows">Дитячий одяг</h2>
                                     <div class="position-text-underline">
@@ -916,15 +903,9 @@
                                 </div>
                             <img class="man-woman-image" src="/img/BST/child/child.png">
                             <span>
-                                <div class="man-woman-button">
-                                    <button class="man-woman-button-scroll-pointer" type="submit" name="scrollTo"
-                                            value="Дитячий одяг">
-                                    ...
-                                    </button>
-                                </div>
                             </span>
-                        </div>
-                        <div class="bag man-woman-img-container">
+                        </a>
+                        <a class="bag man-woman-img-container" href="price.php?scrollTo=Кружки">
                             <div class="text-background">
                                 <h2 class="white-text-with-shadows">Кружки</h2>
                                 <div class="position-text-underline">
@@ -932,15 +913,9 @@
                             </div>
                              <img class="man-woman-image" src="img/BST/cups/cups.png">
                             <span>
-                                <div class="man-woman-button">
-                                    <button class="man-woman-button-scroll-pointer" type="submit" name="scrollTo"
-                                            value="Кружки">
-                                    ...
-                                    </button>
-                                </div>
                             </span>
-                        </div>
-                        <div class="hat man-woman-img-container">
+                        </a>
+                        <a class="hat man-woman-img-container" href="price.php?scrollTo=Шапки+та+кепки">
                                 <div class="text-background">
                                     <h2 class="white-text-with-shadows">Шапки та кепки</h2>
                                     <div class="position-text-underline">
@@ -948,14 +923,8 @@
                                 </div>
                             <img class="man-woman-image" src="img/BST/hats/hats.png">
                             <span>
-                                <div class="man-woman-button">
-                                    <button class="man-woman-button-scroll-pointer" type="submit" name="scrollTo"
-                                            value="Шапки та кепки">
-                                    ...
-                                    </button>
-                                </div>
                             </span>
-                        </div>
+                        </a>
                     </div>
                  </form>
 
