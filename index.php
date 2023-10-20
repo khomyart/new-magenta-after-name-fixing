@@ -814,9 +814,9 @@
                             </h2>
                         </div>
                         <div class="info-container-text-desc">
-                            Спеціальні кольорові плівки ріжуться
-                            плотером і наносяться на футболку під
-                            великим тиском і при великій температурі.
+                            Спеціальні кольорові плівки ріжуться плотером 
+                            і наносяться на футболку під великим тиском 
+                            і при великій температурі.
                             <br>
                             <br>
                             Переваги:
@@ -830,6 +830,11 @@
                             <br> 
                             — не можна наносити повноколірні зображення, такі
                             як фото
+                            <br> 
+                            <br> 
+                            Ціни: 
+                            <br> 
+                            А6-50грн, А5-90грн, А4-140грн, А3-180грн
                         </div>
                     </div>
                 </div>
@@ -839,25 +844,65 @@
             <div class="full-length-back ">
                 <div class="info-container">
                     <div class="info-container-img">
-                        <img src="/img/BST/ironON/iron-on-transfer-paper-940x510123123123.jpg" alt="">
+                        <img src="/img/BST/main_page_print_types/DTF.jpg" alt="">
                     </div>
                     <div class="info-container-text">
                         <div class="info-container-text-header">
                             <h2>
-                                Термо ТРАНСФЕР
+                            DTF друк
                             </h2>
                         </div>
                         <div class="info-container-text-desc">
-                            На спеціальний папір принтером друкується зображення,
-                            яке під тиском наноситься на одяг.
+                            На спеціальну плівку принтером друкується зображення, яке під тиском наноситься на одяг
                             <br>
                             <br>
                             Переваги: 
-                            — можна наносити повноколірне зображення
+                            <br>
+                            — Можна наносити повноколірне зображення розміром А3+, або дуже дрібні та на будь яких частинах одягу, обмеження по зображень друку немає
                             <br>
                             <br>
                             Недоліки:
-                            — витримує до 20 прань
+                            <br>
+                            — витримує до 80 прань
+                            <br>
+                            <br>
+                            Ціни: 
+                            <br>
+                            А7-30грн, А6-50грн, А5-90грн, А4-140грн, А3-180грн
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 30px;">
+            </div>
+            <div class="full-length-back ">
+                <div class="info-container">
+                    <div class="info-container-img">
+                        <img src="/img/BST/main_page_print_types/DTG.jpg" alt="">
+                    </div>
+                    <div class="info-container-text">
+                        <div class="info-container-text-header">
+                            <h2>
+                                DTG (прямий) друк
+                            </h2>
+                        </div>
+                        <div class="info-container-text-desc">
+                            Принтер безпосередньо наносить зображення на одяг
+                            <br>
+                            <br>
+                            Переваги: 
+                            <br>
+                            — Зображення не відчувається на тканині
+                            <br>
+                            <br>
+                            Недоліки:
+                            <br>
+                            — наноситься тільки на пласку поверхню та не на весь одяг
+                            <br>
+                            <br>
+                            Ціни: 
+                            <br>
+                            А6-50грн, А5-90грн, А4-140грн, А3-180грн
                         </div>
                     </div>
                 </div>
