@@ -8,7 +8,7 @@
     <head lang="en">
         <meta charset="UTF-8">
         <title>"Magenta Print|Галерея"</title>
-        <link href="css/style1.css" rel="stylesheet">
+        <link href="css/style2.css" rel="stylesheet">
         <link href="css/style_gallery.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="/img/logos/favicon.png"/>
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -710,7 +710,14 @@
                                     <td vertical-align="center">
                                         <div class="icons-decor">
                                             <a href="viber://chat?number=380988883332">
-                                                <img width=20 style="margin-top:5px;" src="/img/BST/icons/viber-brands.svg">
+                                                <img width=20 style="margin-top:5px; margin-left: 5px;" src="/img/BST/icons/viber-brands.svg">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td vertical-align="center">
+                                        <div class="icons-decor">
+                                            <a href="https://t.me/printmagenta">
+                                                <img width=20 style="margin-top:5px; margin-left: 5px;" src="/img/BST/icons/tg.png">
                                             </a>
                                         </div>
                                     </td>
@@ -759,7 +766,7 @@
                                 <tr>
                                     <td>Субота:</td>
                                     <td></td>
-                                    <td>10:00 — 18:00</td>
+                                    <td>10:00 — 17:00</td>
                                 </tr>
                                 <tr>
                                     <td>Неділя:</td>
@@ -793,14 +800,8 @@
                                         <td><a style="
                                             text-decoration: underline;
                                             text-decoration-color: purple;
-                                            " href="https://goo.gl/maps/65MSBQRFT82XLG6e8">вул. Лесі Українки, 45 в магазині </a>
+                                            " href="https://goo.gl/maps/65MSBQRFT82XLG6e8">проспект Соборності, 11-Ж</a>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td align="center"><a style="
-                                            text-decoration: underline;
-                                            text-decoration-color: purple;
-                                            " href="https://goo.gl/maps/65MSBQRFT82XLG6e8">Анжеліка та AVON</a></td>
                                     </tr>
                             </table>
                         </div>

@@ -488,7 +488,7 @@ $availableSizes = getListOfAvailableSizes($searchValue);
                                         <td><a style="
                                             text-decoration: underline;
                                             text-decoration-color: purple;
-                                            " href="https://goo.gl/maps/65MSBQRFT82XLG6e8">проспект Соборності, 11-Ж</a>
+                                            " href="https://goo.gl/maps/65MSBQRFT82XLG6e8">вул. Лесі Українки, 45 в магазині </a>
                                         </td>
                                     </tr>
                             </table>

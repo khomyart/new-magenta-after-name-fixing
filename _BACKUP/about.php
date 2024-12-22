@@ -8,7 +8,7 @@
     <head lang="en">
         <meta charset="UTF-8">
         <title>"Magenta Print|Про нас"</title>
-        <link href="css/style2.css" rel="stylesheet">
+        <link href="css/style1.css" rel="stylesheet">
         <link href="css/style_gallery.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="/img/logos/favicon.png"/>
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -796,7 +796,7 @@
                                         <td><a style="
                                             text-decoration: underline;
                                             text-decoration-color: purple;
-                                            " href="https://goo.gl/maps/65MSBQRFT82XLG6e8">проспект Соборності, 11-Ж</a>
+                                            " href="https://goo.gl/maps/65MSBQRFT82XLG6e8">вул. Лесі Українки, 45 в магазині </a>
                                         </td>
                                     </tr>
                             </table>

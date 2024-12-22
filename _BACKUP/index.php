@@ -1,24 +1,19 @@
 <?php
-    include 'imports.php';
-    $listOfImages = getListOfImages();
-?>
+   include 'imports.php';
+?> 
 
 <!DOCTYPE html>
 <html>
     <head lang="en">
         <meta charset="UTF-8">
-        <title>"Magenta Print|Про нас"</title>
+        <title>"Magenta Print|Головна сторінка"</title>
         <link href="css/style2.css" rel="stylesheet">
-        <link href="css/style_gallery.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="/img/logos/favicon.png"/>
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	    <link rel="icon" type="image/png" href="/img/logos/favicon.png"/>
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
-        <link rel="stylesheet" href="css/lightbox.min.css">
-        <?php include 'google_tracking.php'; ?>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script src="js/lightbox-plus-jquery.min.js"></script>
-
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <?php include 'google_tracking.php'; ?>
         <style>
 
             @media (max-width: 1550px) {
@@ -146,7 +141,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    height: 300px;
+                    height: fit-content;
                     width: 95%;
                 }
 
@@ -184,17 +179,16 @@
                 }
 
                 .man-woman-container {
-                    padding-bottom: 1rem;
+                    padding: 0 0.5rem;
                     display: flex;
                     justify-content: space-between;
                     align-items: stretch;
                     flex-wrap: wrap;
                     width: 100%;
                     min-height: 53vh;
-                    max-height: 85vh;
+                    max-height: 711px;
                     box-sizing: border-box;
                     margin-top: 0rem;
-                    
                 }
                 
                 .man {
@@ -203,11 +197,32 @@
                     height: 23vh;
                     flex-grow: 0;
                 }
+
+                .man img {
+                    transform: translate(-50%, -48%)
+                    scale(0.21);
+                }
+
+                .man:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.23);
+                }
+
                 .woman {
                     width: 32%;
                     min-width: 20%;
                     height: 23vh;
                     flex-grow: 0;
+                }
+
+                .woman img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .woman:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
                 }
 
                 .child {
@@ -217,6 +232,16 @@
                     flex-grow: 0;
                 }
 
+                .child img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .child:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
+                }
+
                 .hat {
                     min-width: 48.5%;
                     height: 23vh;
@@ -224,10 +249,30 @@
 
                 }
 
+                .hat img {
+                    transform: translate(-50%, -48%)
+                    scale(0.21);
+                }
+
+                .hat:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.23);
+                }
+
                 .bag {
                     min-width: 48.5%;
                     height: 23vh;
                     flex-grow: 0;
+                }
+
+                .bag img {
+                    transform: translate(-50%, -48%)
+                    scale(0.21);
+                }
+
+                .bag:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.23);
                 }
 
             }
@@ -377,7 +422,6 @@
                     display: flex;
                     flex-direction: column;
                     width: 100%;
-                    height: 100%;
                     justify-content: center;
                     align-items: center;
                     border-radius: 10px;
@@ -392,7 +436,7 @@
                 }
 
                 .info-container {
-                    padding: 0rem;
+                    padding-bottom: 1rem;
                     display: flex;
                     flex-direction: column;
                     width: 93%;
@@ -416,7 +460,7 @@
                     left:50%;
                     transform: 
                         translate(-50%, -50%)
-                        scale(0.5)    
+                        scale(0.65)    
                     ;
                 }
 
@@ -434,7 +478,7 @@
                     padding-top: 1rem;
                     overflow: auto;
                     font-size: 1.15rem;
-                    height:  80%;
+                    height:  fit-content;
                 }
 
 
@@ -471,11 +515,31 @@
                     flex-grow: 0;
                 }
 
+                .woman img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .woman:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
+                }
+
                 .child {
                     width: 98%;
                     min-width: 310px;
                     height: 30vh;
                     flex-grow: 0;
+                }
+
+                .child img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .child:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
                 }
 
                 .hat {
@@ -486,11 +550,31 @@
 
                 }
 
+                .hat img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .hat:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
+                }
+
                 .bag {
                     width: 98%;
                     min-width: 310px;
                     height: 30vh;
                     flex-grow: 0;
+                }
+
+                .bag img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .bag:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
                 }
 
                 .footer {
@@ -523,6 +607,7 @@
                     flex-wrap: wrap;
                     width: 100%;
                     min-height: 50vh;
+                    max-height: 711px;
                     box-sizing: border-box;
                     margin-top: 0.5rem;
                     
@@ -534,11 +619,32 @@
                     height: 22vh;
                     flex-grow: 0;
                 }
+
+                .man img {
+                    transform: translate(-50%, -48%)
+                    scale(0.21);
+                }
+
+                .man:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.23);
+                }
+
                 .woman {
                     width: 32%;
                     min-width: 20%;
                     height: 22vh;
                     flex-grow: 0;
+                }
+
+                .woman img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .woman:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
                 }
 
                 .child {
@@ -548,6 +654,16 @@
                     flex-grow: 0;
                 }
 
+                .child img {
+                    transform: translate(-50%, -48%)
+                    scale(0.19);
+                }
+
+                .child:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.21);
+                }
+
                 .hat {
                     min-width: 48.5%;
                     height: 22vh;
@@ -555,10 +671,30 @@
 
                 }
 
+                .hat img {
+                    transform: translate(-50%, -48%)
+                    scale(0.21);
+                }
+
+                .hat:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.23);
+                }
+
                 .bag {
                     min-width: 48.5%;
                     height: 22vh;
                     flex-grow: 0;
+                }
+
+                .bag img {
+                    transform: translate(-50%, -48%)
+                    scale(0.21);
+                }
+
+                .bag:hover img {
+                    transform: translate(-50%,-48%)
+                    scale(0.23);
                 }
             }
             /*LOGO*/
@@ -641,37 +777,211 @@
                 </div>
             </div>
             <!--MENU-->
+            <!--LOGO-->
+            <div class="page-logo">
+                <div class="page-logo-text">
+                    <p>
+                        <h2>Magenta Print</h2>
+                    </p>
+                    <div class="text-between"></div>
+                    <p class="text">
+                        Друк на текстилі у місті Луцьку
+                    </p>
+            
+                </div>
+                <img class="page-logo-image" src="/img/BST/lutsk.jpg" alt="">
+            </div>
+            <!--LOGO-->
+            <!--CONTENT-->
+
             <div class="content-header">
-                <h2>ПРО НАС</h2>
+                <h2>ВИДИ ДРУКУ</h2>
             </div>
             <div class="space-between-lots">
                 <div class="separator">
                 </div>
             </div>
+            <div class="full-length-back">
+                <div class="info-container" >
+                    <div class="info-container-img">
+                        <img src="/img/BST/flexsoft/best-heat-transfer-vinyl.jpg" alt="">
+                    </div>
+                    <div class="info-container-text">
+                        <div class="info-container-text-header">
+                            <h2>
+                                Плівка ФЛЕКС
+                            </h2>
+                        </div>
+                        <div class="info-container-text-desc">
+                            Спеціальні кольорові плівки ріжуться плотером 
+                            і наносяться на футболку під великим тиском 
+                            і при великій температурі.
+                            <br>
+                            <br>
+                            Переваги:
+                            <br> 
+                            — надійність, витримує до 200 прань
+                            <br> 
+                            — яскравість
+                            <br>
+                            <br>
+                            Недоліки:
+                            <br> 
+                            — не можна наносити повноколірні зображення, такі
+                            як фото
+                            <br> 
+                            <br> 
+                            <div class="info-container-block-price-container">
+                                <img src="./images/flex_price.png" style="width: 100%;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 15px;"></div>
+            <div class="separator"></div>
+            <div style="height: 15px;"></div>
+            <div class="full-length-back ">
+                <div class="info-container">
+                    <div class="info-container-img">
+                        <img src="/img/BST/main_page_print_types/DTF.jpg" alt="">
+                    </div>
+                    <div class="info-container-text">
+                        <div class="info-container-text-header">
+                            <h2>
+                            DTF друк
+                            </h2>
+                        </div>
+                        <div class="info-container-text-desc">
+                            На спеціальну плівку принтером друкується зображення, яке під тиском наноситься на одяг
+                            <br>
+                            <br>
+                            Переваги: 
+                            <br>
+                            — Можна наносити повноколірне зображення розміром А3+, або дуже дрібні та на будь яких частинах одягу, обмеження по зображень друку немає
+                            <br>
+                            <br>
+                            Недоліки:
+                            <br>
+                            — витримує до 80 прань
+                            <br>
+                            <br>
+                            <div class="info-container-block-price-container">
+                                <img src="./images/dtf_price.png" style="width: 100%;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 15px;"></div>
+            <div class="separator"></div>
+            <div style="height: 15px;"></div>
+            <div class="full-length-back ">
+                <div class="info-container">
+                    <div class="info-container-img">
+                        <img src="/img/BST/main_page_print_types/DTG.jpg" alt="">
+                    </div>
+                    <div class="info-container-text">
+                        <div class="info-container-text-header">
+                            <h2>
+                                DTG (прямий) друк
+                            </h2>
+                        </div>
+                        <div class="info-container-text-desc">
+                            Принтер безпосередньо наносить зображення на одяг
+                            <br>
+                            <br>
+                            Переваги: 
+                            <br>
+                            — Зображення не відчувається на тканині
+                            <br>
+                            <br>
+                            Недоліки:
+                            <br>
+                            — наноситься тільки на пласку поверхню та не на весь одяг
+                            <br>
+                            <br>
+                            <div class="info-container-block-price-container">
+                                <img src="./images/dtf_price.png" style="width: 100%;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!--CONTENT-->
-                <div class="full-length-back">
-                Перша виготовлена ​​футболка була виготовлена на Мексикансько-Американською війною у 1898 р. Та 1913 р., Коли ВМС США почали випускати їх.<br><br>
+            <!--CONTENT-->
 
-                У 1959 році був винайдений пластизол, більш міцний і еламтичний чорнило, що дозволило робити принт на футболки.<br><br>
-
-                У 1960-х рр. створили компанію Monster у місті Мілл-Веллі, штат Каліфорнія, що дозволило виготовляти персональні принти на футболки.<br><br>
-
-                З 1970-х років друк на одязі став популярним способом реклами товарів. Такий метод використовували і для просування товарів Coca-Cola і Mickey Mouse.<br><br>
-
-                А з 2000-х років набув ще більшої популярності серед різних верст населення на дні народження, новий рік, день закоханих. Корпоративні футболки на неселикі магазики кафе і т.д.<br><br>
+                <div class="content-header">
+                        <h2>ПРОДУКЦІЯ В АСОРТИМЕНТІ</h2>
                 </div>
                 <div class="space-between-lots">
+                    <div class="separator">
+                    </div>
                 </div>
-                <div>
-                    <img src="img/logos/bitch.png">
-                    <img src="img/logos/fruit.png">
-                    <img src="img/logos/sted.png">
+                <form action="price.php" method="get">
+                    <div class="man-woman-container">
+                        <a class="man man-woman-img-container" href="price.php?scrollTo=Чоловічий+одяг">
+                            <div class="text-background">
+                                <h2 class="white-text-with-shadows">Чоловічий одяг</h2>
+                                <div class="position-text-underline">
+                                </div>
+                            </div>
+                            <img class="man-woman-image" src="/img/BST/man/man.png">
+                            <span>
+                            </span>
+                        </a>
+                        <a class="woman man-woman-img-container" href="price.php?scrollTo=Жіночий+одяг">
+                                <div class="text-background">
+                                    <h2 class="white-text-with-shadows">Жіночий одяг</h2>
+                                    <div class="position-text-underline">
+                                    </div>
+                                </div>
+                            <img class="man-woman-image" src="/img/BST/woman/woman.png">
+                            <span>
+                            </span>
+                        </a>
+                        <a class="child man-woman-img-container" href="price.php?scrollTo=Дитячий+одяг">
+                                <div class="text-background">
+                                    <h2 class="white-text-with-shadows">Дитячий одяг</h2>
+                                    <div class="position-text-underline">
+                                    </div>
+                                </div>
+                            <img class="man-woman-image" src="/img/BST/child/child.png">
+                            <span>
+                            </span>
+                        </a>
+                        <a class="bag man-woman-img-container" href="price.php?scrollTo=Кружки">
+                            <div class="text-background">
+                                <h2 class="white-text-with-shadows">Кружки</h2>
+                                <div class="position-text-underline">
+                                </div>
+                            </div>
+                             <img class="man-woman-image" src="img/BST/cups/cups.png">
+                            <span>
+                            </span>
+                        </a>
+                        <a class="hat man-woman-img-container" href="price.php?scrollTo=Шапки+та+кепки">
+                                <div class="text-background">
+                                    <h2 class="white-text-with-shadows">Шапки та кепки</h2>
+                                    <div class="position-text-underline">
+                                    </div>
+                                </div>
+                            <img class="man-woman-image" src="img/BST/hats/hats.png">
+                            <span>
+                            </span>
+                        </a>
+                    </div>
+                 </form>
+
+                <?php// include './templates/feedback.php'; ?>
+
+                <div class="space-between-lots">
+
                 </div>
+
                 <!--CONTENT-->
-                <div class="space-between-lots">
-                </div>
-                <!--FOOTER-->
-                <div class="footer">
+                 <div class="footer">
                     <div class="magenta-logo-div">
                         <img class="magenta-logo" src="img/BST/magenta-logo.png" alt="">
                     </div>
@@ -796,7 +1106,7 @@
                                         <td><a style="
                                             text-decoration: underline;
                                             text-decoration-color: purple;
-                                            " href="https://goo.gl/maps/65MSBQRFT82XLG6e8">проспект Соборності, 11-Ж</a>
+                                            " href="https://goo.gl/maps/65MSBQRFT82XLG6e8">вул. Лесі Українки, 45 в магазині </a>
                                         </td>
                                     </tr>
                             </table>

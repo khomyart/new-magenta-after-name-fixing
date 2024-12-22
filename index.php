@@ -7,7 +7,7 @@
     <head lang="en">
         <meta charset="UTF-8">
         <title>"Magenta Print|Головна сторінка"</title>
-        <link href="css/style1.css" rel="stylesheet">
+        <link href="css/style2.css" rel="stylesheet">
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	    <link rel="icon" type="image/png" href="/img/logos/favicon.png"/>
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
@@ -141,7 +141,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    height: 300px;
+                    height: fit-content;
                     width: 95%;
                 }
 
@@ -422,7 +422,6 @@
                     display: flex;
                     flex-direction: column;
                     width: 100%;
-                    height: 100%;
                     justify-content: center;
                     align-items: center;
                     border-radius: 10px;
@@ -437,7 +436,7 @@
                 }
 
                 .info-container {
-                    padding: 0rem;
+                    padding-bottom: 1rem;
                     display: flex;
                     flex-direction: column;
                     width: 93%;
@@ -461,7 +460,7 @@
                     left:50%;
                     transform: 
                         translate(-50%, -50%)
-                        scale(0.5)    
+                        scale(0.65)    
                     ;
                 }
 
@@ -479,7 +478,7 @@
                     padding-top: 1rem;
                     overflow: auto;
                     font-size: 1.15rem;
-                    height:  80%;
+                    height:  fit-content;
                 }
 
 
@@ -832,15 +831,16 @@
                             як фото
                             <br> 
                             <br> 
-                            Ціни: 
-                            <br> 
-                            А6-50грн, А5-90грн, А4-140грн, А3-180грн
+                            <div class="info-container-block-price-container">
+                                <img src="./images/flex_price.png" style="width: 100%;" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div style="height: 30px;">
-            </div>
+            <div style="height: 15px;"></div>
+            <div class="separator"></div>
+            <div style="height: 15px;"></div>
             <div class="full-length-back ">
                 <div class="info-container">
                     <div class="info-container-img">
@@ -866,15 +866,16 @@
                             — витримує до 80 прань
                             <br>
                             <br>
-                            Ціни: 
-                            <br>
-                            А7-30грн, А6-50грн, А5-90грн, А4-140грн, А3-180грн
+                            <div class="info-container-block-price-container">
+                                <img src="./images/dtf_price.png" style="width: 100%;" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div style="height: 30px;">
-            </div>
+            <div style="height: 15px;"></div>
+            <div class="separator"></div>
+            <div style="height: 15px;"></div>
             <div class="full-length-back ">
                 <div class="info-container">
                     <div class="info-container-img">
@@ -900,9 +901,9 @@
                             — наноситься тільки на пласку поверхню та не на весь одяг
                             <br>
                             <br>
-                            Ціни: 
-                            <br>
-                            А6-50грн, А5-90грн, А4-140грн, А3-180грн
+                            <div class="info-container-block-price-container">
+                                <img src="./images/dtf_price.png" style="width: 100%;" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1015,7 +1016,14 @@
                                     <td vertical-align="center">
                                         <div class="icons-decor">
                                             <a href="viber://chat?number=380988883332">
-                                                <img width=20 style="margin-top:5px;" src="/img/BST/icons/viber-brands.svg">
+                                                <img width=20 style="margin-top:5px; margin-left: 5px;" src="/img/BST/icons/viber-brands.svg">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td vertical-align="center">
+                                        <div class="icons-decor">
+                                            <a href="https://t.me/printmagenta">
+                                                <img width=20 style="margin-top:5px; margin-left: 5px;" src="/img/BST/icons/tg.png">
                                             </a>
                                         </div>
                                     </td>
@@ -1064,7 +1072,7 @@
                                 <tr>
                                     <td>Субота:</td>
                                     <td></td>
-                                    <td>10:00 — 18:00</td>
+                                    <td>10:00 — 17:00</td>
                                 </tr>
                                 <tr>
                                     <td>Неділя:</td>
@@ -1098,14 +1106,8 @@
                                         <td><a style="
                                             text-decoration: underline;
                                             text-decoration-color: purple;
-                                            " href="https://goo.gl/maps/65MSBQRFT82XLG6e8">вул. Лесі Українки, 45 в магазині </a>
+                                            " href="https://goo.gl/maps/65MSBQRFT82XLG6e8">проспект Соборності, 11-Ж</a>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td align="center"><a style="
-                                            text-decoration: underline;
-                                            text-decoration-color: purple;
-                                            " href="https://goo.gl/maps/65MSBQRFT82XLG6e8">Анжеліка та AVON</a></td>
                                     </tr>
                             </table>
                         </div>

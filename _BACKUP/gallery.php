@@ -7,8 +7,8 @@
 <html>
     <head lang="en">
         <meta charset="UTF-8">
-        <title>"Magenta Print|Про нас"</title>
-        <link href="css/style2.css" rel="stylesheet">
+        <title>"Magenta Print|Галерея"</title>
+        <link href="css/style1.css" rel="stylesheet">
         <link href="css/style_gallery.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="/img/logos/favicon.png"/>
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -493,6 +493,10 @@
                     flex-grow: 0;
                 }
 
+                .gallery-image {
+                    padding: 0px;
+                }
+
                 .footer {
                     font-size: 1.15rem;
                 }
@@ -560,6 +564,7 @@
                     height: 22vh;
                     flex-grow: 0;
                 }
+
             }
             /*LOGO*/
         </style>
@@ -641,36 +646,35 @@
                 </div>
             </div>
             <!--MENU-->
-            <div class="content-header">
-                <h2>ПРО НАС</h2>
-            </div>
-            <div class="space-between-lots">
-                <div class="separator">
+            <!--GALLERY-->
+                <div class="gallery-container">
+                    <div class="content-header">
+                        <h2>Галерея</h2>
+                    </div>
+                    <div class="space-between-lots">
+                        <div class="separator">
+                        </div>
+                    </div>
+                    <div class="gallery-image">
+                        <?php
+                        foreach ($listOfImages as $image) {?>
+                            <div class="img-box">
+                                <a href="<?= $image['img'] ?>" data-lightbox="magenta_gallery">
+                                    <img src="<?= $image['img'] ?>" alt="" />
+                                    <div class="transparent-box">
+                                        <div class="caption">
+                                            <p><?= $image['name'] ?></p>
+                                            <p class="opacity-low"><?= $image['desc'] ?></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        <?php
+                        } ?>
+                    </div>
                 </div>
-            </div>
-            <!--CONTENT-->
-                <div class="full-length-back">
-                Перша виготовлена ​​футболка була виготовлена на Мексикансько-Американською війною у 1898 р. Та 1913 р., Коли ВМС США почали випускати їх.<br><br>
-
-                У 1959 році був винайдений пластизол, більш міцний і еламтичний чорнило, що дозволило робити принт на футболки.<br><br>
-
-                У 1960-х рр. створили компанію Monster у місті Мілл-Веллі, штат Каліфорнія, що дозволило виготовляти персональні принти на футболки.<br><br>
-
-                З 1970-х років друк на одязі став популярним способом реклами товарів. Такий метод використовували і для просування товарів Coca-Cola і Mickey Mouse.<br><br>
-
-                А з 2000-х років набув ще більшої популярності серед різних верст населення на дні народження, новий рік, день закоханих. Корпоративні футболки на неселикі магазики кафе і т.д.<br><br>
-                </div>
-                <div class="space-between-lots">
-                </div>
-                <div>
-                    <img src="img/logos/bitch.png">
-                    <img src="img/logos/fruit.png">
-                    <img src="img/logos/sted.png">
-                </div>
+                <!--GALLERY-->
                 <!--CONTENT-->
-                <div class="space-between-lots">
-                </div>
-                <!--FOOTER-->
                 <div class="footer">
                     <div class="magenta-logo-div">
                         <img class="magenta-logo" src="img/BST/magenta-logo.png" alt="">
@@ -796,7 +800,7 @@
                                         <td><a style="
                                             text-decoration: underline;
                                             text-decoration-color: purple;
-                                            " href="https://goo.gl/maps/65MSBQRFT82XLG6e8">проспект Соборності, 11-Ж</a>
+                                            " href="https://goo.gl/maps/65MSBQRFT82XLG6e8">вул. Лесі Українки, 45 в магазині </a>
                                         </td>
                                     </tr>
                             </table>
